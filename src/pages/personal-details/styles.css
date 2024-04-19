@@ -1,0 +1,29 @@
+.personal-details {
+  gap: 2rem;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.personal-details__photo {
+  background-color: white;
+  padding: 1rem 6rem;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+}
+
+.personal-details__infos {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  padding: 1rem 2rem;
+  border: 1px solid #ececec;
+}
+
+.final-button {
+  margin-top: auto;
+  margin-left: auto;
+}

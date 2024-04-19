@@ -1,0 +1,22 @@
+.button--primary {
+  background-color:#FFC423;
+  color: #010101;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  font-weight: 900;
+}
+.button--secondary {
+  background-color: #ff4646;
+  color: #fff;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+}
+.button--terciary {
+  background-color: #46d3ff;
+  color: #fff;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+}

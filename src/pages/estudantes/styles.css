@@ -1,0 +1,30 @@
+.table-container {
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table-alunos {
+  background-color: #fff;
+  border-collapse: collapse;
+  padding: 0 2rem;
+}
+
+.table-alunos tr th,
+.table-alunos tr td {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.table-alunos tr:last-child td {
+  border-bottom: 0;
+}
+
+.table-alunos tr th {
+  padding: 1rem 6.5rem;
+}
+.table-alunos tr td {
+  padding: 1rem 6.5rem;
+}
