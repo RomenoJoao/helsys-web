@@ -13,6 +13,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/auth/">
+          <Route index element={<Login />} />
+        </Route>
         <Route path="/" element={<MenuLateral />}>
           <Route index element={<Home />} />
           <Route path="analise" element={<Analise />} />

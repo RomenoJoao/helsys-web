@@ -7,7 +7,7 @@ export default function MenuLateral() {
     <div className="container">
       <div className="corpoM">
         <div className="title">
-          <h1>HelpSys</h1>
+          <img src="src/images/logo.png" alt="" />
         </div>
         <ul>
           <li>
@@ -35,7 +35,7 @@ export default function MenuLateral() {
               <a> Inserir Notas </a>
             </Link>
           </li>
-          <li>
+          <li style={{ marginBottom: "61%" }}>
             <GroupSVG maxHeight="30px" maxWidth="37px" primaryColor="#FFC423" />
             <Link to="/estudantes">
               {" "}
@@ -45,11 +45,14 @@ export default function MenuLateral() {
           <li className="last-item">
             <div className="user-control">
               <p>
-                Sra.<span style={{fontWeight:'700'}}>António Pedro</span>
+                Sra.<span style={{ fontWeight: "700" }}>António Pedro</span>
               </p>
 
               <div>
-                <ExitSVG maxHeight="30px" maxWidth="37px" />
+                <Link to={'/auth/'}>
+                  {" "}
+                  <ExitSVG maxHeight="30px" maxWidth="37px" />
+                </Link>
               </div>
             </div>
           </li>

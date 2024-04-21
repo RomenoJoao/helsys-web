@@ -21,8 +21,8 @@
   padding: 2rem;
 }
 
-.title h1 {
-  color: #f2f2f2;
+.title img {
+  width: 100%;
 }
 
 .corpoM ul {
@@ -50,16 +50,15 @@ a{
 }
 
 
- .last-item {
+ .last-item { 
   width: 100%; 
   margin-left: -8%;
-  margin-top: 56%;
   align-items: center;
   justify-content: space-between;
   
 }
 
-.container .corpoM .user-control {
+.container .corpoM .last-item .user-control {
   width: 100%;
   height: 100%;
   background-color: #FFDC7D;

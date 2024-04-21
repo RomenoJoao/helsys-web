@@ -1,0 +1,52 @@
+ 
+.login-container {  
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.login-left {
+  width: 50%;
+  height: 100vh;
+  background-color: #ffd155;
+  background-repeat: no-repeat;
+  background-image: url("../..//images/kenny-eliason-zFSo6bnZJTw-unsplash.jpg");
+  background-size: cover;
+  opacity: 1;
+  position: fixed;
+}
+
+.login-left1 {
+  width: 50%;
+  height: 100vh;
+  background-color: #ffd155;
+  background-size: cover;
+  opacity: 0.3;
+  position: fixed;
+}
+.login-right{
+    width: 50%;
+}
+.login-right div {
+  top: 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: black;
+  float: right;
+  position: absolute;
+  margin-left: 60%;
+ padding: 2rem; 
+}
+.login-right div input {
+  width: 456px;
+  height: 43px;
+  background-color: white;
+  border: 1px solid #A2A2A6;
+  border-radius: 4px;
+  color: black;
+  padding: 0rem 0rem 0rem 1rem;
+}
+.logo{
+    width: 234px; 
+    float: right;
+}
