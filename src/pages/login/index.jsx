@@ -1,8 +1,21 @@
-import React from 'react' 
-import './styles.css'
-import { Button } from '../../components/button';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import "./styles.css";
+
+import { Button } from "../../components/button";
+import { Link } from "react-router-dom";
+import useAuth from "../../hooks/use-auth";
+
 export default function Login() {
+  const { login, loading } = useAuth();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    if (name === "email") setEmail(value);
+    if (name === "password") setPassword(value);
+  };
+
   return (
     <div className="login-container">
       <div className="login-left"></div>
@@ -13,17 +26,30 @@ export default function Login() {
           <div className="logo">
             <img src="src/images/logo.png" alt="" />
           </div>
-          */
-        }
+          */}
         <div>
           <h2 style={{ fontWeight: "600" }}>Bem-vindo</h2>
           <span style={{ marginBottom: "22px" }}>
             Faca Login para continuar
           </span>
           <span>Email</span>
-          <input type="text" placeholder="Seu email" required />
+          <input
+            type="text"
+            placeholder="Seu email"
+            onChange={handleInputChange}
+            value={email}
+            name="email"
+            required
+          />
           <span>Palavra-passe</span>
-          <input type="password" placeholder="Sua palavra passe" required />
+          <input
+            type="password"
+            placeholder="Sua palavra passe"
+            onChange={handleInputChange}
+            value={password}
+            name="password"
+            required
+          />
           <span
             style={{
               marginBottom: "22px",
@@ -34,12 +60,12 @@ export default function Login() {
           >
             Recuperar credenciais
           </span>
-          <Link to={"/"}>
-            <Button
-              style={{ width: "456px" }}
-              label={"Iniciar Sessao"}
-            ></Button>
-          </Link>
+
+          <Button
+            onClick={() => login(email, password)}
+            style={{ width: "456px" }}
+            label={"Iniciar Sessao"}
+          ></Button>
 
           <div className="icons"></div>
         </div>

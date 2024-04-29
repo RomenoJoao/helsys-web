@@ -8,22 +8,25 @@ import InserirDocs from "./pages/inserirPDF";
 import Home from "./pages/home/Home";
 import Login from "./pages/login";
 import { PersonalDetails } from "./pages/personal-details";
+import useAuth from "./hooks/use-auth";
 
 export default function App() {
+  const { user } = useAuth();
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/auth/">
+        {!user ? (
           <Route index element={<Login />} />
-        </Route>
-        <Route path="/" element={<MenuLateral />}>
-          <Route index element={<Home />} />
-          <Route path="analise" element={<Analise />} />
-          <Route path="estudantes" element={<Estudantes />} />
-          <Route path="predicao" element={<Predicao />} />
-          <Route path="inserir" element={<InserirDocs />} />
-          <Route path="*" element={<>Nenhuma pagina encontrada</>} />
-        </Route>
+        ) : (
+          <Route path="/" element={<MenuLateral />}>
+            <Route index element={<Home />} />
+            <Route path="analise" element={<Analise />} />
+            <Route path="estudantes" element={<Estudantes />} />
+            <Route path="predicao" element={<Predicao />} />
+            <Route path="inserir" element={<InserirDocs />} />
+            <Route path="*" element={<>Nenhuma pagina encontrada</>} />
+          </Route>
+        )}
       </Routes>
     </BrowserRouter>
   );

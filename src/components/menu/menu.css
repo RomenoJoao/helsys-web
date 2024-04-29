@@ -11,14 +11,15 @@
   background-color: #7E7E7E;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start; 
 }
 .middle {
   display: flex;
   flex-direction: row;
 }
 .title {
-  padding: 2rem;
+  padding:  1rem 0rem 1rem 2rem;
+  border-bottom: solid 1px #e4e4e4 ; 
 }
 
 .title img {
@@ -38,11 +39,17 @@
 .corpoM ul li {
   display: flex;
   gap: 2rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  
+  padding: 1rem 0rem 1rem 2rem;
+  background-color: #939393;
+  border-bottom: solid 2px #7E7E7E;
 }
-
+ul li:hover{ 
+  background-color: #FFDC7D;
+ 
+}
+a:hover{
+   color: white;
+}
 a{
   text-decoration: none;  
   color: #FFC423;
@@ -51,18 +58,23 @@ a{
 
 
  .last-item { 
-  width: 100%; 
-  margin-left: -8%;
+  width: 100%;  
   align-items: center;
   justify-content: space-between;
+  margin-top: 15rem;
+
   
+}
+.corpoM ul .last-item{
+  padding: 0rem;
 }
 
 .container .corpoM .last-item .user-control {
   width: 100%;
   height: 100%;
-  background-color: #FFDC7D;
+  background-color: #ffdd80;
   color: black;
+  
 }
 .user-control{
   padding: 0.5rem;

@@ -1,8 +1,10 @@
 import { Link, Outlet } from "react-router-dom";
+import useAuth from "../../hooks/use-auth";
 import { BarsSVG, ExitSVG, GroupSVG, HouseSVG, SearchUserSVG } from "../svg";
 import "./menu.css";
 
 export default function MenuLateral() {
+  const { logout } = useAuth();
   return (
     <div className="container">
       <div className="corpoM">
@@ -49,10 +51,9 @@ export default function MenuLateral() {
               </p>
 
               <div>
-                <Link to={'/auth/'}>
-                  {" "}
+                <button onClick={logout}>
                   <ExitSVG maxHeight="30px" maxWidth="37px" />
-                </Link>
+                </button>
               </div>
             </div>
           </li>
