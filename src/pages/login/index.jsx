@@ -61,7 +61,7 @@ export default function Login() {
             Recuperar credenciais
           </span>
 
-          <Button
+          <Button className='test'
             onClick={() => login(email, password)}
             style={{ width: "456px" }}
             label={"Iniciar Sessao"}
