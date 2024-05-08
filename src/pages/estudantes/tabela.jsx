@@ -68,12 +68,12 @@ const DATA = [
 ];
 
 export const Tabela = (props) => {
-  /* const [data, loading, error] = useQuery(GETALUNOS);
+   const {data, loading, error} = useQuery(GETALUNOS);
 
-  const alunos = data.alunos;
+  const alunos = data;
   console.log(alunos)
   if (loading) return <p>loading</p>;
-  if (error) return <p>Ocorreu um erro</p>;*/
+  if (error) return <p>Ocorreu um erro</p>;
   return (
     <div className="table-container">
       <table className="table-alunos">
@@ -83,12 +83,12 @@ export const Tabela = (props) => {
           <th>Curso</th>
           <th>{props.lastHeader}</th>
         </tr>
-        {DATA.map((item, index) => (
+        {alunos.map((item, index) => (
           <tr style={{ color: "black" }} key={index}>
-            <td style={{ color: "black" }}>{item.nome}</td>
+            <td style={{ color: "black" }}>{item.name}</td>
             <td style={{ color: "black" }}>{item.matricula}</td>
-            <td style={{ color: "black" }}>{item.curso}</td>
-            <td style={{ color: "black" }}>{item.ano}</td>
+            <td style={{ color: "black" }}>{item.curso.nome}</td>
+            <td style={{ color: "black" }}>{item.anoAcademico}</td>
           </tr>
         ))}
       </table>
