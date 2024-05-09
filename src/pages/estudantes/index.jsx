@@ -5,7 +5,7 @@ export const Estudantes = () => {
   return (
     <Layout>
       <Header title={"Estudantes"} />
-      <Tabela lastHeader={"Ano"}></Tabela>
+      <Tabela lastHeader={"Frequencia"}></Tabela>
     </Layout>
   );
 };

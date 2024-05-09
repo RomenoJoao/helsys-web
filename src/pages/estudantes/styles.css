@@ -4,14 +4,14 @@
   overflow: auto;
   width: 100%;
   display: flex;
-  padding-left: 3rem;
+  padding-left: 0rem;
+  padding: 0.4rem 0rem 2rem 0rem;
   justify-content: center;
 }
 
 .table-alunos {
   background-color: #fff;
-  border-collapse: collapse;
-  padding: 0 2rem;
+  border-collapse: collapse; 
 }
 
 .table-alunos tr th,
@@ -24,8 +24,15 @@
 }
 
 .table-alunos tr th {
-  padding: 1rem 6.5rem;
+  padding: 1rem 6.5rem 2rem 5rem;
+  font-weight: 400;
+  color: #757575 ;
 }
 .table-alunos tr td {
-  padding: 1rem 6.5rem;
+  padding: 1rem 6rem 2rem 5rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.table-alunos tr:nth-child(even){
+  background-color: #f4f2f1;
 }

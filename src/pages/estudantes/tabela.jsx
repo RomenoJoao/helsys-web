@@ -20,12 +20,14 @@ export const Tabela = (props) => {
           <th>{props.lastHeader}</th>
         </tr>
         {alunos.map((item, index) => (
+          
           <tr style={{ color: "black" }} key={index}>
             <td style={{ color: "black" }}>{item.name}</td>
             <td style={{ color: "black" }}>{item.matricula}</td>
             <td style={{ color: "black" }}>{item.curso && item.curso.nome}</td>
             <td style={{ color: "black" }}>{item.anoAcademico}</td>
           </tr>
+            
         ))}
       </table>
     </div>

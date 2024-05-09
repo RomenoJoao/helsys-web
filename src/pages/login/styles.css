@@ -45,8 +45,14 @@
   border-radius: 4px;
   color: black;
   padding: 0rem 0rem 0rem 1rem;
+  display: flex;
 }
-.logo{
-    width: 234px; 
-    float: right;
+.logo {
+    max-width: 264px; 
+    position: absolute;
+}
+.login-right .logo{
+  float: right;
+  margin-left: 80%;
+  margin-top: -7%;
 }

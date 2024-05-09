@@ -22,11 +22,11 @@ export default function Login() {
       <div className="login-left1"></div>
 
       <div className="login-right">
-        {/*
+        {
           <div className="logo">
-            <img src="src/images/logo.png" alt="" />
+            <img src="src/images/logotipo.png" alt="" />
           </div>
-          */}
+          }
         <div>
           <h2 style={{ fontWeight: "600" }}>Bem-vindo</h2>
           <span style={{ marginBottom: "22px" }}>

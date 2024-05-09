@@ -9,18 +9,18 @@ export default function MenuLateral() {
     <div className="container">
       <div className="corpoM">
         <div className="title">
-          <img src="src/images/logo.png" alt="" />
+          <img src="src/images/logotipo.png" alt="" />
         </div>
         <ul>
           <li>
-            <HouseSVG maxHeight="30px" maxWidth="37px" primaryColor="#FFC423" />
+            <HouseSVG maxHeight="30px" maxWidth="37px" primaryColor="#ffffff" />
             <Link to="/">
               {" "}
               <a> Home </a>
             </Link>
           </li>
           <li>
-            <BarsSVG maxHeight="30px" maxWidth="37px" primaryColor="#FFC423" />
+            <BarsSVG maxHeight="30px" maxWidth="37px" primaryColor="#ffffff" />
             <Link to="/analise">
               {" "}
               <a> Analise</a>{" "}
@@ -30,7 +30,7 @@ export default function MenuLateral() {
             <SearchUserSVG
               maxHeight="30px"
               maxWidth="37px"
-              primaryColor="#FFC423"
+              primaryColor="#ffffff"
             />
             <Link to={"/inserir"}>
               {" "}
@@ -38,7 +38,7 @@ export default function MenuLateral() {
             </Link>
           </li>
           <li style={{ marginBottom: "61%" }}>
-            <GroupSVG maxHeight="30px" maxWidth="37px" primaryColor="#FFC423" />
+            <GroupSVG maxHeight="30px" maxWidth="37px" primaryColor="#ffffff" />
             <Link to="/estudantes">
               {" "}
               <a>Estudantes</a>
@@ -51,7 +51,7 @@ export default function MenuLateral() {
               </p>
 
               <div>
-                <button onClick={logout}>
+                <button style={{ backgroundColor: "#9099a0", border:'none' }} onClick={logout}>
                   <ExitSVG maxHeight="30px" maxWidth="37px" />
                 </button>
               </div>
