@@ -1,9 +1,10 @@
 .table-container {
   border-radius: 10px;
   background-color: #fff;
-  overflow: hidden;
+  overflow: auto;
   width: 100%;
   display: flex;
+  padding-left: 3rem;
   justify-content: center;
 }
 
