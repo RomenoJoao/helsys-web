@@ -1,0 +1,84 @@
+
+.inputs{
+    display: flex;
+    gap:  20px;
+}
+.lineOne{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lineTwo{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lineThree{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lineFour{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lineOne .inputT {
+    width: 196px;
+    height: 35px;
+    background-color: #adadad;
+    color: black;
+    border-style: none;
+    border: solid 1px #adadad;
+    border-radius: 10px;
+
+}
+.lineTwo .inputT {
+    width: 196px;
+    height: 35px;
+    background-color: #adadad;
+    color: black;
+    border-style: none;
+    border: solid 1px #adadad;
+    border-radius: 10px;
+
+}
+
+
+.selects{
+    width: 210px;
+    height: 50px;
+    background-color: #c9c9c9;
+    color: rgb(59, 59, 59);
+    border-radius: 10px;
+}
+
+#submitData{
+    width: 450px;
+    height: 43px;
+    font-weight: 600;
+    color: black;
+    background-color: #FFC423;
+    border: none;
+    border-radius: 12px;
+    margin-left: 30%;
+}
+#submitData:hover{
+    background-color: #ffdf86;
+}
+#resultado{
+    color: black;
+    font-weight: 900;
+    
+}
+
+.nResult{
+    color: black;
+    float: right;
+    padding:0px 30px 0px 0px;
+}
+.situation{
+    font-weight: 400;
+    color: red;
+}

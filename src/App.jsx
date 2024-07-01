@@ -7,6 +7,9 @@ import Predicao from "./pages/predicao";
 import InserirDocs from "./pages/inserirPDF";
 import Home from "./pages/home/Home";
 import Login from "./pages/login";
+import Coordenador from "./pages/Coordenador";
+import Curso from "./pages/Curso";
+import Personal from "./pages/AnaliseUnica"
 import { PersonalDetails } from "./pages/personal-details";
 import useAuth from "./hooks/use-auth";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
@@ -34,6 +37,9 @@ export default function App() {
               <Route path="estudantes" element={<Estudantes />} />
               <Route path="predicao" element={<Predicao />} />
               <Route path="inserir" element={<InserirDocs />} />
+              <Route path="addCoordenador" element={<Coordenador />} />
+              <Route path="addCurso" element={<Curso />} />
+              <Route path="personal" element={<Personal />} />
               <Route path="*" element={<>Nenhuma pagina encontrada</>} />
             </Route>
           )}

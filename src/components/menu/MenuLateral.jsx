@@ -23,7 +23,14 @@ export default function MenuLateral() {
             <BarsSVG maxHeight="30px" maxWidth="37px" primaryColor="#ffffff" />
             <Link to="/analise">
               {" "}
-              <a> Analise</a>{" "}
+              <a> Analise Geral</a>{" "}
+            </Link>
+          </li>
+          <li>
+            <BarsSVG maxHeight="30px" maxWidth="37px" primaryColor="#ffffff" />
+            <Link to="/personal">
+              {" "}
+              <a> Analise Personalizada</a>{" "}
             </Link>
           </li>
           <li>
@@ -35,6 +42,28 @@ export default function MenuLateral() {
             <Link to={"/inserir"}>
               {" "}
               <a> Inserir Notas </a>
+            </Link>
+          </li>
+          <li>
+            <SearchUserSVG
+              maxHeight="30px"
+              maxWidth="37px"
+              primaryColor="#ffffff"
+            />
+            <Link to={"/addCoordenador"}>
+              {" "}
+              <a> Adicionar Coordenador </a>
+            </Link>
+          </li>
+          <li>
+            <SearchUserSVG
+              maxHeight="30px"
+              maxWidth="37px"
+              primaryColor="#ffffff"
+            />
+            <Link to={"/addCurso"}>
+              {" "}
+              <a> Adicionar Curso </a>
             </Link>
           </li>
           <li style={{ marginBottom: "61%" }}>
@@ -51,7 +80,10 @@ export default function MenuLateral() {
               </p>
 
               <div>
-                <button style={{ backgroundColor: "#9099a0", border:'none' }} onClick={logout}>
+                <button
+                  style={{ backgroundColor: "#9099a0", border: "none" }}
+                  onClick={logout}
+                >
                   <ExitSVG maxHeight="30px" maxWidth="37px" />
                 </button>
               </div>
