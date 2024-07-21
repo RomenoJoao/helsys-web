@@ -17,7 +17,10 @@
     "graphql": "^16.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-root": "^2.0.1"
+    "react-hot-toast": "^2.4.1",
+    "react-query": "^3.39.3",
+    "react-root": "^2.0.1",
+    "toast": "^0.5.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",

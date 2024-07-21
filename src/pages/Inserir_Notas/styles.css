@@ -1,0 +1,38 @@
+.table-container {
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  padding-left: 0rem;
+  padding: 0.4rem 0rem 2rem 0rem;
+  justify-content: center;
+}
+
+.table-alunos {
+  background-color: #fff;
+  border-collapse: collapse; 
+}
+
+.table-alunos tr th,
+.table-alunos tr td {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.table-alunos tr:last-child td {
+  border-bottom: 0;
+}
+
+.table-alunos tr th {
+  padding: 1rem 6.5rem 2rem 5rem;
+  font-weight: 400;
+  color: #757575 ;
+}
+.table-alunos tr td {
+  padding: 1rem 6rem 2rem 5rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.table-alunos tr:nth-child(even){
+  background-color: #f4f2f1;
+}

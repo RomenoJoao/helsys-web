@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/layout";
 import MenuLateral from "./components/menu/MenuLateral";
+import AddSemestre from "./pages/addSemestre";
 import { Analise } from "./pages/analise";
 import { Estudantes } from "./pages/estudantes";
 import Predicao from "./pages/predicao";
@@ -9,7 +9,9 @@ import Home from "./pages/home/Home";
 import Login from "./pages/login";
 import Coordenador from "./pages/Coordenador";
 import Curso from "./pages/Curso";
-import Personal from "./pages/AnaliseUnica"
+import { InserirNotas } from "./pages/Inserir_Notas";
+import Personal from "./pages/AnaliseUnica";
+import Semestres from "./pages/Semestres";
 import { PersonalDetails } from "./pages/personal-details";
 import useAuth from "./hooks/use-auth";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
@@ -22,29 +24,36 @@ const client = new ApolloClient({
   },
 });
 
+import { QueryClient, QueryClientProvider } from "react-query";
+const cliente = new QueryClient();
 export default function App() {
   const { user } = useAuth();
   return (
-    <ApolloProvider client={client}>
-      <BrowserRouter>
-        <Routes>
-          {!user ? (
-            <Route index element={<Login />} />
-          ) : (
-            <Route path="/" element={<MenuLateral />}>
-              <Route index element={<Home />} />
-              <Route path="analise" element={<Analise />} />
-              <Route path="estudantes" element={<Estudantes />} />
-              <Route path="predicao" element={<Predicao />} />
-              <Route path="inserir" element={<InserirDocs />} />
-              <Route path="addCoordenador" element={<Coordenador />} />
-              <Route path="addCurso" element={<Curso />} />
-              <Route path="personal" element={<Personal />} />
-              <Route path="*" element={<>Nenhuma pagina encontrada</>} />
-            </Route>
-          )}
-        </Routes>
-      </BrowserRouter>
-    </ApolloProvider>
+    <QueryClientProvider client={cliente}>
+      <ApolloProvider client={client}>
+        <BrowserRouter>
+          <Routes>
+            {!user ? (
+              <Route index element={<Login />} />
+            ) : (
+              <Route path="/" element={<MenuLateral />}>
+                <Route index element={<Home />} />
+                <Route path="analise" element={<Analise />} />
+                <Route path="estudantes" element={<Estudantes />} />
+                <Route path="inserirNotas" element={<InserirNotas />} />
+                <Route path="predicao" element={<Predicao />} />
+                <Route path="inserir" element={<InserirDocs />} />
+                <Route path="addCoordenador" element={<Coordenador />} />
+                <Route path="addCurso" element={<Curso />} />
+                <Route path="personal" element={<Personal />} />
+                <Route path="semestres" element={<Semestres />} />
+                <Route path="addSemestre" element={<AddSemestre />} />
+                <Route path="*" element={<>Nenhuma pagina encontrada</>} />
+              </Route>
+            )}
+          </Routes>
+        </BrowserRouter>
+      </ApolloProvider>
+    </QueryClientProvider>
   );
 }

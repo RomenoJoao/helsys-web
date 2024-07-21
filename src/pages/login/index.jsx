@@ -17,14 +17,15 @@ export default function Login() {
   };
 
   return (
-    <div className="login-container">
+    <div className="login_container">
       <div className="login-left"></div>
       <div className="login-left1"></div>
 
-      <div className="login-right">
+      {
+        <div className="login-right">
         {
           <div className="logo">
-            <img src="src/images/logotipo.png" alt="" />
+            <img src="src/images/logoPfundoBranco.png" alt="" />
           </div>
           }
         <div>
@@ -70,6 +71,7 @@ export default function Login() {
           <div className="icons"></div>
         </div>
       </div>
+          }
     </div>
   );
 }

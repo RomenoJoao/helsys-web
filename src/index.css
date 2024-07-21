@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   background-color: #e2e2e2;
-  
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,7 +15,6 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }

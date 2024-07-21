@@ -77,3 +77,11 @@
 #submit:hover{
     background-color: #ffdf86;
 }
+
+.selectCurso{
+    width: 388px;
+    height: 50px;
+    background-color: #f3f1f1;
+    color: rgb(59, 59, 59);
+    border-radius: 10px;
+}

@@ -1,7 +1,7 @@
-.container {
+.containerMenu {
   display: flex;
+  top: 0;
   max-height: 100vh;
-  position: relative;
 }
 
 .corpoM {
@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start; 
+  position: fixed;
 }
 .middle {
   display: flex;
@@ -39,7 +40,7 @@
 .corpoM ul li {
   display: flex;
   gap: 2rem;
-  padding: 1rem 0rem 1rem 2rem;
+  padding: 0.7rem 0rem 0.7rem 2rem;
   background-color: #414851;
   border-bottom: solid 1px #727d8b;
 }
@@ -54,19 +55,26 @@ a{
   text-decoration: none;  
   color: rgb(255, 255, 255);
   font-weight: bolder;
+  font-size: small;
 }
 
 
  .last-item { 
+  margin-top: 92.3vh;
   width: 100%;  
   align-items: center;
-  justify-content: space-between;
-  margin-top: 0rem;
+  justify-content: space-between; 
+  position: absolute;
+
+  background-color: #9099a0;
  
   
 }
-.corpoM ul .last-item{
-  padding: 0rem;
+.corpoM .last-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .container .corpoM .last-item .user-control {
@@ -74,11 +82,14 @@ a{
   height: 100%;
   background-color: #9099a0;
   color: black;
+
   
 }
 .user-control{
   padding: 0.5rem;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  align-content:space-between ;
 }

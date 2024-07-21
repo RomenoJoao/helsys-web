@@ -76,6 +76,8 @@ const useAuth = () => {
         email,
         password
       );
+
+      // Call Backend to create first user before set user in localStorage
       setUser(userCredential.user);
     } catch (error) {
       handleCreateUserErrors(error);

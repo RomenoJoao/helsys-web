@@ -6,7 +6,7 @@ import "./menu.css";
 export default function MenuLateral() {
   const { logout } = useAuth();
   return (
-    <div className="container">
+    <div className="containerMenu">
       <div className="corpoM">
         <div className="title">
           <img src="src/images/logotipo.png" alt="" />
@@ -50,6 +50,17 @@ export default function MenuLateral() {
               maxWidth="37px"
               primaryColor="#ffffff"
             />
+            <Link to={"/semestres"}>
+              {" "}
+              <a> Gerir Semestres </a>
+            </Link>
+          </li>
+          <li>
+            <SearchUserSVG
+              maxHeight="30px"
+              maxWidth="37px"
+              primaryColor="#ffffff"
+            />
             <Link to={"/addCoordenador"}>
               {" "}
               <a> Adicionar Coordenador </a>
@@ -73,23 +84,24 @@ export default function MenuLateral() {
               <a>Estudantes</a>
             </Link>
           </li>
-          <li className="last-item">
-            <div className="user-control">
-              <p>
-                Sra.<span style={{ fontWeight: "700" }}>António Pedro</span>
-              </p>
-
-              <div>
-                <button
-                  style={{ backgroundColor: "#9099a0", border: "none" }}
-                  onClick={logout}
-                >
-                  <ExitSVG maxHeight="30px" maxWidth="37px" />
-                </button>
-              </div>
-            </div>
-          </li>
         </ul>
+
+        <div className="last-item">
+          <div className="user-control">
+            <p>
+              Sra.<span style={{ fontWeight: "700" }}>António Pedro</span>
+            </p>
+
+            <div>
+              <button
+                style={{ backgroundColor: "#9099a0", border: "none" }}
+                onClick={logout}
+              >
+                <ExitSVG maxHeight="30px" maxWidth="37px" />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <Outlet />
     </div>
